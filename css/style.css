@@ -18,6 +18,12 @@
     margin: 0 auto;
 }
 
+.container-fluid{
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
 html body{
     font-family: 'Open Sans'; 
 }
@@ -60,6 +66,9 @@ a{
 
 ul li{
     list-style: none;
+}
+.d-none{
+    display: none;
 }
 
 .d-flex{
@@ -113,7 +122,6 @@ header .btn{
     border-radius: 5px;
     font-size: 18px;
     color: var(--color--golden);
-    display: none;
 }
 
 /* header section ends */
@@ -142,7 +150,6 @@ header .btn{
 
 .intro .intro-cards  {
     padding-top: 2rem;  
-    margin: 0 4rem; 
 } 
 
 .intro .intro-cards .card .card-content h3{
@@ -209,7 +216,7 @@ header .btn{
 
 .blog .blog-text a{
     padding: 10px 30px;
-    border: 2px solid white;
+    border: 2px solid var(--color--white);
     background-color: var(--color--golden);
     border-radius: 5px;
     color: var(--color--white);
@@ -232,7 +239,7 @@ header .btn{
 
 .blog .blog-categories .list ul li a{
     font-size: 19px;
-    padding: 9px 0;
+    line-height: 2.5;
     color: var(--color--skyblue);
     text-decoration: underline;
     font-weight: lighter;
@@ -252,7 +259,7 @@ header .btn{
 
 .blog .blog-links .list ul li a{
     font-size: 19px;
-    padding: 9px 0;
+    line-height: 2.5;
     color: var(--color--skyblue);
     text-decoration: underline;
     font-weight: lighter;
@@ -302,12 +309,8 @@ header .btn{
 footer {
     background: #191919;
     background-image: url('../images/footer-bg.png');
-    height: 90vh;
+    height: 100vh;
     color: #fff;
-}
-
-footer .part-1{
-    margin: 0 0 0 3rem;
 }
 
 footer .part-1 h3,
@@ -318,10 +321,6 @@ footer .part-4 h3{
     font-weight: lighter ;
     color: var(--color--golden);
     padding: 1rem 0 2rem 0;
-}
-
-footer .part-4{
-    margin: 0 3rem 0 0;
 }
 
 footer .part-1 .box p{
@@ -346,7 +345,7 @@ footer .part-1 p{
 }
 
 footer .part-2 .list ul li a{
-    padding: .8rem 20px;
+    line-height: 2.5;
     font-size: 16px;
     font-weight: 100;
     color: #CCCC66;
@@ -401,7 +400,6 @@ footer .part-4 .footer-images img{
     width: 80px;
     margin: 0 0 10px 0;
     padding: 0 5px 0 0;
-   
 }
 
 /* footer section ends */
